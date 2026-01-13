@@ -1,53 +1,35 @@
 import React from 'react'
 import "../App.css"
 import { Link, useNavigate } from 'react-router-dom'
+
 export default function LandingPage() {
-
-
     const router = useNavigate();
 
     return (
-        <div className='landingPageContainer'>
+        <div className='landing-container'>
             <nav>
-                <div className='navHeader'>
-                    <h2>Haaanjii Video Call</h2>
-                </div>
-                <div className='navlist'>
-                    <p onClick={() => {
-                        router("/aljk23")
-                    }}>Join as Guest</p>
-                    <p onClick={() => {
-                        router("/auth")
-
-                    }}>Register</p>
-                    <div onClick={() => {
-                        router("/auth")
-
-                    }} role='button'>
-                        <p>Login</p>
+                <div className='nav-brand'>Namo</div>
+                <div className='nav-links'>
+                    <div className='nav-item' onClick={() => router("/aljk23")}>Join as Guest</div>
+                    <div className='nav-item' onClick={() => router("/auth")}>Register</div>
+                    <div className='btn-primary' onClick={() => router("/auth")} role='button'>
+                        Login
                     </div>
                 </div>
             </nav>
 
-
-            <div className="landingMainContainer">
-                <div>
-                    <h1><span style={{ color: "#FF9839" }}>Connect</span> with your loved Ones</h1>
-
-                    <p>Cover a distance by Apna Video Call</p>
-                    <div role='button'>
-                        <Link to={"/auth"}>Get Started</Link>
-                    </div>
+            <div className="landing-content">
+                <div className="hero-text">
+                    <h1>
+                        <span style={{ color: "var(--primary-color)" }}>Connect</span> with your loved ones
+                    </h1>
+                    <p>Experience crystal clear video calls with zero latency. Distance is just a number when you have Namo.</p>
+                    <Link to={"/auth"} className="btn-primary">Get Started</Link>
                 </div>
-                <div>
-
-                    <img src="/mobile.png" alt="" />
-
+                <div className="hero-image">
+                    <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=2667&auto=format&fit=crop" alt="Video Call App Interface" />
                 </div>
             </div>
-
-
-
         </div>
     )
 }
