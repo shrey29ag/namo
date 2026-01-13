@@ -233,13 +233,9 @@ function HomeComponent() {
                             justifyContent: 'center'
                         }}>
                              <img 
-                                src="/home_illustration.jpg" 
-                                alt="App Preview" 
-                                style={{ width: '105%', height: 'auto', opacity: 0.9 }}
-                                onError={(e) => {
-                                    e.target.style.display = 'none';
-                                    e.target.parentNode.style.background = 'linear-gradient(45deg, #0A84FF, #30D158)';
-                                }}
+                                src="https://images.unsplash.com/photo-1633078654545-5456050d22f7?q=80&w=2670&auto=format&fit=crop" 
+                                alt="Abstract 3D Shape" 
+                                style={{ width: '100%', height: '100%', objectFit: 'cover' }}
                              />
                         </div>
                     </div>
