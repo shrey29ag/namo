@@ -83,6 +83,25 @@ nav {
   z-index: 1;
 }
 
+@media (max-width: 768px) {
+  .landing-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .hero-text h1 {
+    font-size: 2.5rem;
+  }
+
+  .nav-links {
+    display: none; /* Consider adding a hamburger menu for full implementation, or just stacking for now */
+  }
+  
+  nav {
+      justify-content: center;
+  }
+}
+
 .hero-text h1 {
   font-size: 4rem;
   margin-bottom: var(--spacing-md);
