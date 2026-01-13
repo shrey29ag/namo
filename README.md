@@ -1,8 +1,6 @@
 # Namo - Premium Video Conferencing
 
-**Namo** (formerly Haaanjii) is a high-quality, secure, and user-friendly video conferencing application designed to connect people seamlessly. Built with a modern tech stack, it offers crystal-clear video calls, real-time chat, and screen sharing capabilities wrapped in a premium, glassmorphic "Apple-style" aesthetic.
-
-![Namo Interface](https://images.unsplash.com/photo-1616588589676-60b30c3c1681?q=80&w=2670&auto=format&fit=crop)
+**Namo** is a high-quality, secure, and user-friendly video conferencing application designed to connect people seamlessly. Built with a modern tech stack, it offers crystal-clear video calls, real-time chat, and screen sharing capabilities wrapped in a premium, glassmorphic "Apple-style" aesthetic.
 
 ## 🚀 Features
 

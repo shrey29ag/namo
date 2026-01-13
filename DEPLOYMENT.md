@@ -9,6 +9,12 @@ This guide outlines the steps to deploy the **frontend** to **Vercel** and the *
 
 ---
 
+## Live Links (Updated)
+*   **Frontend:** `https://namo-self.vercel.app`
+*   **Backend:** `https://namo-backend-2kxl.onrender.com`
+
+---
+
 ## Part 1: Backend Deployment (Render)
 
 1.  **Log in to Render** and go to your [Dashboard](https://dashboard.render.com/).
@@ -26,7 +32,7 @@ This guide outlines the steps to deploy the **frontend** to **Vercel** and the *
     *   Add the following keys (copy values from your local `.env` or use production values):
         *   `MONGO_URI`: `mongodb+srv://shreyvinayakagrawal1111:haaanjiiDatabase01@haaanjii.bh1em.mongodb.net/`
         *   `PORT`: `5000` (Render will override this internally, but good to have)
-        *   `CLIENT_URL`: `https://namo-frontend.vercel.app` (See Note below)
+        *   `CLIENT_URL`: `https://namo-self.vercel.app` 
 6.  Click **"Create Web Service"**.
 7.  **Wait for Deployment:** Render will build and deploy. Once finished, copy the **Service URL** (e.g., `https://namo-backend.onrender.com`).
 
@@ -46,7 +52,7 @@ This guide outlines the steps to deploy the **frontend** to **Vercel** and the *
 5.  **Environment Variables:**
     *   Expand the "Environment Variables" section.
     *   Add:
-        *   `VITE_SERVER_URL`: Paste your Render Backend URL here (e.g., `https://namo-backend.onrender.com`).
+        *   `VITE_SERVER_URL`: Paste your Render Backend URL here (e.g., `https://namo-backend-2kxl.onrender.com`).
 6.  Click **"Deploy"**.
 7.  **Finalise:**
     *   Once deployed, Vercel will give you a domain (e.g., `https://namo-frontend.vercel.app`).

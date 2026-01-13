@@ -13,8 +13,13 @@ const server = createServer(app);
 const io = connectToSocket(server);
 
 app.set("port", process.env.PORT || 5000);
+const allowedOrigins = [
+  "https://namo-self.vercel.app",
+  process.env.CLIENT_URL
+].filter(Boolean);
+
 app.use(cors({
-    origin: [process.env.CLIENT_URL],
+    origin: allowedOrigins,
     credentials: true,
     methods: ["GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"] 
   }));
