@@ -8,7 +8,10 @@ export default function LandingPage() {
     return (
         <div className='landing-container'>
             <nav>
-                <div className='nav-brand'>Namo</div>
+                <div className='nav-brand'>
+                    <img src="/logo.jpg" alt="Namo Logo" style={{ height: '40px', borderRadius: '8px' }} />
+                    <span style={{ marginLeft: '10px' }}>Namo</span>
+                </div>
                 <div className='nav-links'>
                     <div className='nav-item' onClick={() => router("/aljk23")}>Join as Guest</div>
                     <div className='nav-item' onClick={() => router("/auth")}>Register</div>

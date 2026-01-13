@@ -407,7 +407,12 @@ export default function VideoMeetComponent() {
             let tracks = localVideoref.current.srcObject.getTracks()
             tracks.forEach(track => track.stop())
         } catch (e) { }
-        window.location.href = "/"
+        
+        if (localStorage.getItem("token")) {
+            window.location.href = "/home"
+        } else {
+            window.location.href = "/"
+        }
     }
 
     let openChat = () => {

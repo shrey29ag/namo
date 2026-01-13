@@ -233,7 +233,7 @@ function HomeComponent() {
                             justifyContent: 'center'
                         }}>
                              <img 
-                                src="/mobile.png" 
+                                src="/home_illustration.jpg" 
                                 alt="App Preview" 
                                 style={{ width: '105%', height: 'auto', opacity: 0.9 }}
                                 onError={(e) => {
